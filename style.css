@@ -63,22 +63,39 @@ ul,li,a {
 }
 
 /* ------------- Header Section --------- */
+
 header {
     background-color: #136372;
 }
 
+.logo {
+    margin-right: 1rem;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav-list {
     display: flex;
-    padding: 1rem;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.nav-list-primary {
+    flex-grow: 1;
+}
+
+.nav-item + .nav-item {
+    margin-left: 3rem;
 }
 
 .nav-link {
     color: #FFF;
     padding: 1rem;
-}
-
-.nav-item + .nav-item {
-    margin-left: 3rem;
+    margin: 0;
 }
 
 .nav-link:hover,
